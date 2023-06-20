@@ -120,6 +120,7 @@ nav li a:hover {
   width: 100%;
   height: 100%;
   top: 55px;
+  z-index: -1;
 }
 
 video {
@@ -183,6 +184,7 @@ video {
   width: 100%;
   top: 110px;
   text-align: center;
+  z-index: -1;
 }
 
 .btnTodosCursos a{
