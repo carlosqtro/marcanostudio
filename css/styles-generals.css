@@ -1,4 +1,4 @@
-/* Estilos Generales */
+Estilos Generales
 /* ******************************************************* */
 
 html,
@@ -601,5 +601,104 @@ justify-content: start;
   height: 40px;
 }
 
-/* Estilos "Continuar aqui*/
+/* Estilos de Response*/
 /* ******************************************************* */
+
+@media only screen and (max-width: 480px) {
+  /* Estilos y ajustes para dispositivos móviles pequeños */
+
+  .imgHeader {
+    width: 30%;
+}
+
+  .sponsorH1{
+    font-size: 24px;
+  }
+
+  #sect1{
+    height: 30%;
+  }
+
+  .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+  }
+
+  .content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .container {
+    top: 70px;
+}
+
+  .container h1 {
+    font-size: 28px;
+}
+
+.btnTodosCursos {
+  top: 70px;
+}
+
+.btnTodosCursos a {
+  font-size: 14px;
+}
+
+.gallery {
+  top: 70px;
+}
+
+.gallery h1 {
+  font-size: 28px;
+}
+
+.sponsor-section {
+  position: relative;
+  top: 850px;
+  z-index: -1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  top: 800px;
+  height: 20%;
+  margin: 60px auto;
+  text-align: center;
+  width: 100%
+}
+
+.social-media-content, .footer-info{
+  display: none;
+}
+
+.footer-content {
+  border-right:none;
+  height: 20%;
+  width: auto;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo img{
+  width: 50%;
+  height: 60px;
+}
+
+.footer-content .social-media {
+  text-align: left;
+  width: 100%;
+}
+
+.social-media{
+  width: 30%;
+}
+
+}
