@@ -72,3 +72,32 @@ var swiper = new Swiper(".swiper", {
 	});
   }
 
+  // Formulario
+
+  document.getElementById("miFormulario").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+
+    // Obtiene los datos del formulario
+    var formData = new FormData(document.getElementById("miFormulario"));
+
+    // Realiza la solicitud de envío utilizando Fetch
+    fetch("procesar_formulario.php", {
+      method: "POST",
+      body: formData
+    })
+    .then(function(response) {
+      // Maneja la respuesta de la solicitud
+      if (response.ok) {
+        // La solicitud se completó correctamente
+        console.log("Formulario enviado correctamente");
+      } else {
+        // La solicitud no se completó correctamente
+        console.log("Error al enviar el formulario");
+      }
+    })
+    .catch(function(error) {
+      // Maneja cualquier error de la solicitud
+      console.log("Error en la solicitud: " + error);
+    });
+  });
+
