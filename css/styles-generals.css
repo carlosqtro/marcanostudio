@@ -673,14 +673,15 @@ justify-content: start;
 }
 
 .sponsor-section {
-  top: 820px;
+  position: absolute;
+  top: 1600px;
   z-index: -1;
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  top: 800px;
+  top: 1800px;
   height: 20%;
   margin: 60px auto;
   text-align: center;
