@@ -610,7 +610,118 @@ justify-content: start;
 @media (min-width: 320px) and (max-width: 480px) {
   /* Estilos y ajustes para dispositivos móviles pequeños */
 
+  header img {
+    margin: 0 auto;
+    /* height: 60%; */
+    width: min-content;
+  }
 
+  .sponsorH1{
+    font-size: 24px;
+  }
+
+  #sect1{
+    height: 28%;
+  }
+
+  .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+  }
+
+  .content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .container {
+    top: 70px;
+    z-index: -1;
+    position: relative;
+    padding: 10px;
+    width: 90%;
+    /* top: 90px; */
+    margin: 0px auto;
+    /* border: 1px solid red; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+  .container h1 {
+    font-size: 28px;
+}
+
+.btnTodosCursos {
+  top: 70px;
+}
+
+.btnTodosCursos a {
+  font-size: 14px;
+}
+
+.gallery {
+  margin-top: 90px;
+  top: 70px;
+}
+
+.gallery h1 {
+  font-size: 28px;
+}
+
+.sponsor-section {
+  position: absolute;
+  top: 1700px;
+  z-index: -1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  top: 1800px;
+  height: 20%;
+  margin: 60px auto;
+  text-align: center;
+  width: 100%
+}
+
+.social-media-content, .footer-info{
+  display: none;
+}
+
+.footer-content {
+  border-right:none;
+  height: 20%;
+  width: auto;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo img{
+  width: 50%;
+  height: 60px;
+}
+
+.footer-content .social-media {
+  text-align: left;
+  width: 100%;
+}
+
+.social-media{
+  width: 30%;
+}
+
+}
+
+@media (max-device-width: 375px) and (max-device-height: 812px) {
   header img {
     margin: 0 auto;
     /* height: 60%; */
