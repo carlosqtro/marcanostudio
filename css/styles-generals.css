@@ -604,36 +604,41 @@ justify-content: start;
 /* Estilos de Response*/
 /* ******************************************************* */
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) { */
+
+@media (min-width: 320px) and (max-width: 480px) {
   /* Estilos y ajustes para dispositivos móviles pequeños */
 
-  .imgHeader {
-    width: 30%;
-}
+
+  header img {
+    margin: 0 auto;
+    /* height: 60%; */
+    width: min-content;
+  }
 
   .sponsorH1{
     font-size: 24px;
   }
 
   #sect1{
-    height: 30%;
+    height: 28%;
   }
 
   .content h1 {
     margin: 0;
     padding: 0;
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .content h3 {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .container {
     top: 70px;
-    z-index: 0;
+    z-index: -1;
     position: relative;
     padding: 10px;
     width: 90%;
@@ -669,7 +674,7 @@ justify-content: start;
 
 .sponsor-section {
   position: relative;
-  top: 850px;
+  top: 740px;
   z-index: -1;
 }
 
@@ -714,3 +719,78 @@ footer {
 }
 
 }
+
+@media (min-width: 481px) and (max-width: 768px) { 
+
+  Estilos Generales html, body {
+    height: 100%;
+    width: 100%;
+}
+
+  .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 38px;
+  }
+
+  .content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+  }
+
+  #sect1{
+    height: 34%;
+  }
+
+  .sponsor-section {
+    position: relative;
+    top: 800px;
+    z-index: -1;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    top: 800px;
+    height: 20%;
+    margin: 60px auto;
+    text-align: center;
+    width: 100%
+  }
+  
+  .social-media-content, .footer-info{
+    display: none;
+  }
+  
+  .footer-content {
+    border-right:none;
+    height: 20%;
+    width: auto;
+  }
+  
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-logo img{
+    width: 50%;
+    height: 60px;
+  }
+  
+  .footer-content .social-media {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .social-media{
+    width: 30%;
+  }
+
+ }
+
+
+
+ 
