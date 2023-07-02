@@ -673,7 +673,6 @@ justify-content: start;
 }
 
 .sponsor-section {
-  position: relative;
   top: 820px;
   z-index: -1;
 }
@@ -744,7 +743,6 @@ footer {
   }
 
   .sponsor-section {
-    position: relative;
     top: 880px;
     z-index: -1;
   }
