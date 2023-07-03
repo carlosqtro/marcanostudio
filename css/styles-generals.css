@@ -633,7 +633,7 @@ justify-content: start;
   header img {
     margin: 0 auto;
     /* height: 60%; */
-    width: min-content;
+    /* width: min-content; */
   }
 
   .imgHeader{
