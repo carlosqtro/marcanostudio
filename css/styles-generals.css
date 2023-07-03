@@ -35,7 +35,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  /* z-index: 0; */
+  z-index: 999;
 }
 
 .imgHeader {
@@ -165,27 +165,39 @@ video {
 /* Estilos Swiper (Cursos) */
 /* ******************************************************* */
 
+.overlay-container {
+  position: relative;
+  z-index: 1;
+}
+
 .container {
-  z-index: -1;
+    position: relative;
+    padding: 10px;
+    width: 90%;
+    top: 90px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  /* z-index: -1;
   position: relative;
   padding: 10px;
-  width: 90%;
-  top: 90px;
+  max-width: 90%;
   margin: 0px auto;
-  /* border: 1px solid red; */
-  /* background-color: red; */
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; */
+
 
 .btnTodosCursos{
   position: relative;
   width: 100%;
   top: 110px;
   text-align: center;
-  z-index: -1;
+  z-index: 1;
 }
 
 .btnTodosCursos a{
@@ -234,9 +246,16 @@ video {
   box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
 }
 
-.swiper-wrapper {
-  width: 10%;
+/* .swiper-wrapper {
+  width: 100%;
   flex-wrap: nowrap;
+} */
+
+.swiper-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
 }
 
 .container .swiper-slide img {
@@ -392,7 +411,7 @@ p {
   width: 100%;
   top: 0%;
   left: 0;
-  transform: translateX(-100%);
+  transform: translateX(-120%);
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -464,7 +483,8 @@ p {
 
 .sponsor-section {
   position: relative;
-  top: 790px;
+  top: 1000px;
+  margin-bottom: 200px;
 }
 
 .sponsor-container {
@@ -616,36 +636,41 @@ justify-content: start;
     width: min-content;
   }
 
+  .imgHeader{
+    width: 100%;
+  }
+
+  nav ul {
+    gap: 0;
+  }
+
   .sponsorH1{
     font-size: 24px;
   }
 
   #sect1{
-    height: 28%;
+    height: 30%;
   }
 
   .content h1 {
     margin: 0;
     padding: 0;
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .content h3 {
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .container {
-    top: 70px;
+    /* position:relative; */
+    top: 40px;
     z-index: -1;
-    position: relative;
     padding: 10px;
     width: 90%;
-    /* top: 90px; */
     margin: 0px auto;
-    /* border: 1px solid red; */
-    /* background-color: red; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -653,11 +678,11 @@ justify-content: start;
 }
 
   .container h1 {
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .btnTodosCursos {
-  top: 70px;
+  top: 40px;
 }
 
 .btnTodosCursos a {
@@ -665,138 +690,41 @@ justify-content: start;
 }
 
 .gallery {
-  margin-top: 90px;
-  top: 70px;
+  margin-top: 0px;
+  top: 60px;
 }
 
 .gallery h1 {
-  font-size: 28px;
+  font-size: 26px;
 }
 
-.sponsor-section {
-  position: relative;
-  top: 1700px;
-  z-index: -1;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  top: 1800px;
-  height: 20%;
-  margin: 60px auto;
-  text-align: center;
-  width: 100%
-}
-
-.social-media-content, .footer-info{
-  display: none;
-}
-
-.footer-content {
-  border-right:none;
-  height: 20%;
-  width: auto;
-}
-
-.footer-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-logo img{
-  width: 50%;
-  height: 60px;
-}
-
-.footer-content .social-media {
-  text-align: left;
+.container-img {
+  height: 50%;
   width: 100%;
-}
-
-.social-media{
-  width: 30%;
-}
+  top: 20%;
 
 }
 
-@media (max-device-width: 375px) and (max-device-height: 812px) {
-  header img {
-    margin: 0 auto;
-    /* height: 60%; */
-    width: min-content;
-  }
-
-  .sponsorH1{
-    font-size: 24px;
-  }
-
-  #sect1{
-    height: 28%;
-  }
-
-  .content h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 22px;
-  }
-
-  .content h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-  }
-
-  .container {
-    top: 70px;
-    z-index: -1;
-    position: relative;
-    padding: 10px;
-    width: 90%;
-    /* top: 90px; */
-    margin: 0px auto;
-    /* border: 1px solid red; */
-    /* background-color: red; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-  .container h1 {
-    font-size: 28px;
-}
-
-.btnTodosCursos {
-  top: 70px;
-}
-
-.btnTodosCursos a {
+.copy {
   font-size: 14px;
-}
-
-.gallery {
-  margin-top: 90px;
-  top: 70px;
-}
-
-.gallery h1 {
-  font-size: 28px;
 }
 
 .sponsor-section {
   position: relative;
-  top: 1700px;
-  z-index: -1;
+  top: 1050px;
+  z-index: 1;
+}
+
+.sponsorH1 {
+  font-size: 26px;
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  top: 1800px;
+  top: 1000px;
   height: 20%;
-  margin: 60px auto;
+  /* margin: 60px auto; */
   text-align: center;
   width: 100%
 }
@@ -904,74 +832,121 @@ footer {
 
 }
 
-@media only screen and (max-width: 428px) and (max-height: 926px) {
-  Estilos Generales html, body {
-    height: 100%;
-    width: 100%;
-}
-
-  .content h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 26px;
+@media (max-device-width: 769px) and (max-device-height: 812px) {
+  
+  header img {
+    margin: 0 auto;
+    /* height: 60%; */
+    width: min-content;
   }
 
-  .content h3 {
+  .sponsorH1{
+    font-size: 24px;
+  }
+
+  #sect1{
+    height: 28%;
+  }
+
+  .content h1 {
     margin: 0;
     padding: 0;
     font-size: 22px;
   }
 
-  #sect1{
-    height: 34%;
+  .content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
   }
 
-  .sponsor-section {
-    position: relative;
-    top: 760px;
+  .container {
+    top: 70px;
     z-index: -1;
-  }
-
-  footer {
+    
+    padding: 10px;
+    width: 90%;
+    /* top: 90px; */
+    margin: 0px auto;
+    /* border: 1px solid red; */
+    /* background-color: red; */
     display: flex;
-    flex-direction: column;
-    top: 800px;
-    height: 20%;
-    margin: 100px auto;
-    text-align: center;
-    width: 100%
-  }
-  
-  .social-media-content, .footer-info{
-    display: none;
-  }
-  
-  .footer-content {
-    border-right:none;
-    height: 20%;
-    width: auto;
-  }
-  
-  .footer-logo {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
-  
-  .footer-logo img{
-    width: 50%;
-    height: 60px;
-  }
-  
-  .footer-content .social-media {
-    text-align: left;
-    width: 100%;
-  }
-  
-  .social-media{
-    width: 30%;
-  }
 }
+
+  .container h1 {
+    font-size: 28px;
+}
+
+.btnTodosCursos {
+  top: 70px;
+}
+
+.btnTodosCursos a {
+  font-size: 14px;
+}
+
+.gallery {
+  margin-top: 90px;
+  top: 70px;
+}
+
+.gallery h1 {
+  font-size: 28px;
+}
+
+.sponsor-section {
+  position: relative;
+  top: 1700px;
+  z-index: -1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  top: 1800px;
+  height: 20%;
+  margin: 60px auto;
+  text-align: center;
+  width: 100%
+}
+
+.social-media-content, .footer-info{
+  display: none;
+}
+
+.footer-content {
+  border-right:none;
+  height: 20%;
+  width: auto;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo img{
+  width: 50%;
+  height: 60px;
+}
+
+.footer-content .social-media {
+  text-align: left;
+  width: 100%;
+}
+
+.social-media{
+  width: 30%;
+}
+
+}
+
+
+
 
 
 
