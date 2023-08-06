@@ -41,7 +41,7 @@ header {
 .imgHeader {
   display: flex;
   flex-direction: row;
-  width: 15%;
+  /* width: 15%; */
   height: 100%;
   background-color: #000;
 }
@@ -49,7 +49,7 @@ header {
 header img {
   margin: 0 auto;
   /* height: 60%; */
-  width: 70%;
+  width: 100%;
 }
 
 /* Estilos Nav */
@@ -119,21 +119,44 @@ nav li a:hover {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 100%;
-  top: 55px;
+  /* height: 100%; */
+  top: 80px;
   z-index: -1;
 }
 
-video {
+#sect1 {
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Proporción de aspecto 16:9 (para un video widescreen) */
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  object-fit: cover;
   margin: 0;
   padding: 0;
 }
 
-.content {
+/* video {
+  width: 100%;
+  height: 0;
   z-index: -1;
+  margin: 0;
+  padding: 0;
+} */
+
+.content {
+  /* z-index: -1; */
   height: min-content;
   display: flex;
   flex-direction: column;
@@ -145,7 +168,7 @@ video {
 }
 
 .content h1 {
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
   font-size: 70px;
 }
@@ -172,9 +195,15 @@ video {
 
 .container {
     position: relative;
+<<<<<<< HEAD
+    /* padding: 10px; */
+    width: 90%;
+    top: 100px;
+=======
     padding: 10px;
     width: 90%;
     top: 90px;
+>>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -195,26 +224,29 @@ video {
 .btnTodosCursos{
   position: relative;
   width: 100%;
-  top: 110px;
+  top: 130px;
   text-align: center;
   z-index: 1;
 }
 
 .btnTodosCursos a{
   text-decoration: none;
-  color: #000;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
   padding: 4px 8px;
   border-radius: 4px;
   transition: all 333ms ease-in-out;
-  background-color: black;
-  color: #fff;
+  background-color: #C9E4C5;
+  border: 2px solid #c1ac95;
+ 
+  padding: 5px;
+  border-radius: 5px;
+  color: #000;
 }
 
 .btnTodosCursos a:hover{
-  color: black;
-  background-color: rgb(194, 194, 190);
+  border: 1px solid #ece6e6;
+        background-color: #faeBe0; 
 }
 
 .swiper {
@@ -268,9 +300,9 @@ video {
 }
 
 .card-description {
-  background-color: #d8e3f5;
+  background-color: #C9E4C5;
   font-size: medium;
-  /* height: 160px; */
+  height: 230px;
 }
 
 .container .swiper-slide .card-description {
@@ -280,24 +312,62 @@ video {
 }
 
 .container .swiper-slide .card-title,
-.container .swiper-slide .card-text {
+.container .swiper-slide {
   margin-bottom: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.card-title h4{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.card-title#card-title-esp h4{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  height: 100px;
 }
 
 .container .swiper-slide .card-link {
   text-align: center;
 }
 
+/* Botones */
 .container .swiper-slide .card-link a {
   text-decoration: none;
-  color: #1d6ce2;
+  color: salmon;
+  margin-top: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #b5cda3;
+  border: 1px solid #c1ac95;
+  padding: 5px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.card-link {
+  margin-top: 17px !important;
+}
+
+.container .swiper-slide .card-link a:hover {
+  border: 1px solid #ece6e6;
+  background-color: #faeBe0;  
 }
 
 .swiper-button-next {
+  color: #c1ac95;
   right: 26px !important;
 }
 
 .swiper-button-prev {
+  color: #c1ac95;
   left: 26px !important;
 }
 
@@ -332,7 +402,8 @@ video {
 .curso-tab article h1,
 p {
   margin: 0;
-  padding: 0;
+  padding: 5px;
+  text-align: center;
 }
 
 .curso-tab article img {
@@ -342,6 +413,12 @@ p {
   border-radius: 15px;
   padding: 2px;
   background-color: #000;
+}
+
+.card-title{
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 /* .footer-curso {
@@ -463,7 +540,7 @@ p {
   cursor: pointer;
 }
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   .img-show {
     width: 90%;
   }
@@ -476,14 +553,18 @@ p {
     top: 10px;
     font-size: 30px;
   }
-}
+} */
 
 /* Estilos sponsor*/
 /* ******************************************************* */
 
 .sponsor-section {
   position: relative;
+<<<<<<< HEAD
+  top: 770px;
+=======
   top: 1000px;
+>>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
   margin-bottom: 200px;
 }
 
@@ -500,6 +581,8 @@ p {
   border-radius: 15px;
   width: 150px;
   text-align: center;
+  /* background-color: #C9E4C5; */
+  background-color: #c3b8aa;
 }
 
 .sponsorH1 {
@@ -510,6 +593,7 @@ p {
 .sponsor img {
   width: 130px;
   height: 130px;
+  border-radius: 5px;
 }
 
 /* Estilos Icono WhatsApp/
@@ -625,11 +709,24 @@ justify-content: start;
 /* Estilos de Response*/
 /* ******************************************************* */
 
-/* @media only screen and (max-width: 480px) { */
-
 @media (min-width: 320px) and (max-width: 480px) {
   /* Estilos y ajustes para dispositivos móviles pequeños */
 
+<<<<<<< HEAD
+header img {
+  margin: 0 auto;
+  /* height: 60%; */
+  width: min-content;
+  }
+
+.imgHeader{
+  width: 100%;
+}
+
+nav ul {
+ gap: 0;
+}
+=======
   header img {
     margin: 0 auto;
     /* height: 60%; */
@@ -702,9 +799,108 @@ justify-content: start;
   height: 50%;
   width: 100%;
   top: 20%;
+>>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
+
+.sponsorH1{
+  font-size: 24px;
+}
+
+<<<<<<< HEAD
+#sect1 {
+  position: relative;
+  top: 7em;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Proporción de aspecto 16:9 (para un video widescreen) */
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Estilos adicionales para el contenido */
+.content h1 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  /* margin-top: 70px; */
+}
+
+.content h3 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  /* margin-bottom: 1.5rem;
+  padding: 6px; */
+}
+
+.container{
+  top: 10em;
+}
+
+.container h1 {
+    font-size: 26px;
+    /* margin-top: 80px */
+}
+
+.btnTodosCursos {
+  top: 12em;
+}
+
+.btnTodosCursos a {
+  font-size: 20px;
+  background-color: #C9E4C5;
+  border: 1px solid #ece6e6;
+  padding: 5px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.gallery {
+  margin-top: 0px;
+  top: 14em;
+}
+
+.gallery h1 {
+  font-size: 26px;
+}
+
+.container-img {
+  height: 50%;
+  width: 100%;
+  top: 20%;
 
 }
 
+.copy {
+  font-size: 14px;
+  position: fixed;
+}
+
+.sponsor-section {
+  position: relative;
+  top: 85em !important;
+=======
 .copy {
   font-size: 14px;
 }
@@ -712,6 +908,7 @@ justify-content: start;
 .sponsor-section {
   position: relative;
   top: 1050px;
+>>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
   z-index: 1;
 }
 
@@ -722,7 +919,11 @@ justify-content: start;
 footer {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
+  top: 80em !important;
+=======
   top: 1000px;
+>>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
   height: 20%;
   /* margin: 60px auto; */
   text-align: center;
@@ -763,39 +964,71 @@ footer {
 
 @media (min-width: 481px) and (max-width: 768px) { 
 
-  Estilos Generales html, body {
-    height: 100%;
+header img {
+  width: auto;
+}
+
+  .imgHeader{
     width: 100%;
+  }
+
+  nav ul {
+    gap: 0;
+  }
+
+  .container h1 {
+    font-size: 28px;
+    /* margin-top: 80px; */
 }
 
   .content h1 {
     margin: 0;
     padding: 0;
-    font-size: 26px;
+    font-size: 32px;
   }
 
   .content h3 {
     margin: 0;
     padding: 0;
-    font-size: 22px;
+    font-size: 20px;
   }
 
-  #sect1{
-    height: 34%;
+  .gallery {
+    margin-top: 0px;
+    top: 140px;
+  }
+
+  .gallery h1 {
+    font-size: 28px;
+  }
+  
+  .container-img {
+    height: 50%;
+    width: 100%;
+    top: 20%;
+  
+  }
+  
+  .copy {
+    font-size: 14px;
   }
 
   .sponsor-section {
     position: relative;
-    top: 760px;
-    z-index: -1;
+    top: 80em !important;
+    z-index: 1;
+  }
+  
+  .sponsorH1 {
+    font-size: 28px;
   }
 
   footer {
     display: flex;
     flex-direction: column;
-    top: 800px;
-    height: 20%;
-    margin: 100px auto;
+    top: 1000px;
+    height: 30%;
+    /* margin: 60px auto; */
     text-align: center;
     width: 100%
   }
@@ -806,7 +1039,7 @@ footer {
   
   .footer-content {
     border-right:none;
-    height: 20%;
+    height: 60%;
     width: auto;
   }
   
@@ -814,11 +1047,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
   }
   
   .footer-logo img{
-    width: 50%;
-    height: 60px;
+    height: 100%;
+    width: 80%;
   }
   
   .footer-content .social-media {
@@ -828,16 +1062,34 @@ footer {
   
   .social-media{
     width: 30%;
+    margin-top: 0;
   }
 
 }
 
+<<<<<<< HEAD
+@media (min-width: 769px) and (max-width: 860px) {
+  
+  header img {
+    width: 100%;
+  }
+
+  .sponsorH1{
+    font-size: 24px;
+  }
+
+  .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 42px;
+=======
 @media (max-device-width: 769px) and (max-device-height: 812px) {
   
   header img {
     margin: 0 auto;
     /* height: 60%; */
     width: min-content;
+>>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
   }
 
   .sponsorH1{
@@ -851,9 +1103,17 @@ footer {
   .content h1 {
     margin: 0;
     padding: 0;
-    font-size: 22px;
+    font-size: 28px;
   }
 
+<<<<<<< HEAD
+  .container {
+    /* top: 40px; */
+    z-index: -1;
+    padding: 10px;
+    width: 90%;
+    margin: 0px auto;
+=======
   .content h3 {
     margin: 0;
     padding: 0;
@@ -870,10 +1130,13 @@ footer {
     margin: 0px auto;
     /* border: 1px solid red; */
     /* background-color: red; */
+>>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
+=======
 }
 
   .container h1 {
@@ -943,11 +1206,364 @@ footer {
   width: 30%;
 }
 
+>>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
 }
 
+  .container h1 {
+    font-size: 28px;
+    /* margin-top: 80px; */
+}
 
+.gallery h1 {
+  font-size: 28px;
+}
 
+<<<<<<< HEAD
+.sponsor-section {
+  position: relative;
+  top: 970px;
+  z-index: -1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  top: 60em !important;
+  height: 30%;
+  /* margin: 60px auto; */
+  text-align: center;
+  width: 100%
+}
+
+.social-media-content, .footer-info{
+  display: none;
+}
+
+.footer-content {
+  border-right:none;
+  height: 60%;
+  width: auto;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-logo img{
+  height: 100%;
+  width: 80%;
+}
+
+.footer-content .social-media {
+  text-align: left;
+  width: 100%;
+}
+
+.social-media{
+  width: 30%;
+  margin-top: 0;
+}
+
+} 
+
+@media (min-width: 861px) and (max-width: 1012px) {
+  
+      header img {
+        width: 100%;
+      }
+    
+      .sponsorH1{
+        font-size: 24px;
+      }
+    
+      #sect1 {
+        position: relative;
+      }
+      
+      .video-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* Proporción de aspecto 16:9 (para un video widescreen) */
+        overflow: hidden;
+      }
+      
+      .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+        z-index: 1;
+      }
+    
+      .container {
+        /* top: 40px; */
+        z-index: -1;
+        padding: 10px;
+        width: 90%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .content h1{
+      font-size: 4em;
+      margin: 0;
+      padding: 0;
+    }
+    
+      .container h1 {
+        font-size: 28px;
+    }
+    
+    .gallery h1 {
+      font-size: 28px;
+    }
+    
+    .sponsor-section {
+      position: relative;
+      top: 970px;
+      z-index: -1;
+    }
+
+    footer{
+      top: 60em !important;
+      TODO: Terminar de arreglar este footer
+    }
+    
+} 
+
+@media (min-width: 1013px) and (max-width: 1285px) {
+  
+      header img {
+        width: 100%;
+      }
+    
+      .sponsorH1{
+        font-size: 24px;
+      }
+    
+      #sect1 {
+        position: relative;
+      }
+      
+      .video-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* Proporción de aspecto 16:9 (para un video widescreen) */
+        overflow: hidden;
+      }
+      
+      .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+        z-index: 1;
+      }
+    
+      .container {
+        /* top: 40px; */
+        z-index: -1;
+        /* padding: 10px; */
+        width: 90%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .content h1{
+      font-size: 50px;
+      margin: 0;
+      padding: 0;
+    }
+    
+      .container h1 {
+        font-size: 28px;
+        /* margin-top: 80px; */
+    }
+    
+    .btnTodosCursos {
+      /* top: 70px; */
+    }
+    
+    .card-description{
+      height: 280px;
+    }
+    
+    .gallery {
+      /* margin-top: 110px; */
+    }
+    
+    .gallery h1 {
+      font-size: 28px;
+    }
+    
+    .sponsor-section {
+      position: relative;
+      top: 1000px;
+      z-index: -1;
+    }
+  
+    footer{
+      top: 60em !important;
+      TODO: Terminar de arreglar este footer
+    }
+
+} 
+
+@media (min-width: 1286px) and (max-width: 1668px) {
+  
+      header img {
+        width: 100%;
+      }
+    
+      .sponsorH1{
+        font-size: 24px;
+      }
+    
+      #sect1 {
+        position: relative;
+      }
+      
+      .video-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* Proporción de aspecto 16:9 (para un video widescreen) */
+        overflow: hidden;
+      }
+      
+      .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+        z-index: 1;
+      }
+    
+      .container {
+        /* top: 140px; */
+        z-index: -1;
+        padding: 10px;
+        width: 90%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .content h1{
+      font-size: 4em;
+      margin: 0;
+      padding: 0;
+    }
+
+    .content h3{
+      font-size: 3em;
+    }
+    
+      .container h1 {
+        font-size: 28px;
+        /* margin-top: 60px; */
+    }
+    
+    .btnTodosCursos {
+      /* top: 0px; */
+    }
+      
+    .card-description{
+      height: 280px;
+    }
+    
+      .gallery {
+        position: relative;
+        margin-top: 180px;
+        width: 100%;
+    }
+
+    .gallery h1 {
+      font-size: 28px;
+    }
+    
+    .sponsor-section {
+      position: relative;
+      top: 70em;
+      z-index: -1;
+    }
+  
+    footer{
+      top: 60em !important;
+      TODO: Terminar de arreglar este footer
+    }
+
+}
+
+@media (min-width: 1669px) {
+
+      .container h1 {
+        margin-top: 80px;
+      }
+
+      .container h1 {
+        margin-top: 0px;
+    }
+
+    .sponsor-section {
+      position: relative;
+      top: 70em;
+      z-index: -1;
+    }
+
+  footer{
+    top: 60em;
+  }
+}
+=======
 
 
 
  
+>>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
