@@ -195,15 +195,9 @@ nav li a:hover {
 
 .container {
     position: relative;
-<<<<<<< HEAD
     /* padding: 10px; */
     width: 90%;
     top: 100px;
-=======
-    padding: 10px;
-    width: 90%;
-    top: 90px;
->>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -560,11 +554,7 @@ p {
 
 .sponsor-section {
   position: relative;
-<<<<<<< HEAD
   top: 770px;
-=======
-  top: 1000px;
->>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
   margin-bottom: 200px;
 }
 
@@ -712,7 +702,6 @@ justify-content: start;
 @media (min-width: 320px) and (max-width: 480px) {
   /* Estilos y ajustes para dispositivos móviles pequeños */
 
-<<<<<<< HEAD
 header img {
   margin: 0 auto;
   /* height: 60%; */
@@ -726,86 +715,11 @@ header img {
 nav ul {
  gap: 0;
 }
-=======
-  header img {
-    margin: 0 auto;
-    /* height: 60%; */
-    /* width: min-content; */
-  }
-
-  .imgHeader{
-    width: 100%;
-  }
-
-  nav ul {
-    gap: 0;
-  }
-
-  .sponsorH1{
-    font-size: 24px;
-  }
-
-  #sect1{
-    height: 30%;
-  }
-
-  .content h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 26px;
-  }
-
-  .content h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-  }
-
-  .container {
-    /* position:relative; */
-    top: 40px;
-    z-index: -1;
-    padding: 10px;
-    width: 90%;
-    margin: 0px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-  .container h1 {
-    font-size: 26px;
-}
-
-.btnTodosCursos {
-  top: 40px;
-}
-
-.btnTodosCursos a {
-  font-size: 14px;
-}
-
-.gallery {
-  margin-top: 0px;
-  top: 60px;
-}
-
-.gallery h1 {
-  font-size: 26px;
-}
-
-.container-img {
-  height: 50%;
-  width: 100%;
-  top: 20%;
->>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
 
 .sponsorH1{
   font-size: 24px;
 }
 
-<<<<<<< HEAD
 #sect1 {
   position: relative;
   top: 7em;
@@ -900,15 +814,6 @@ nav ul {
 .sponsor-section {
   position: relative;
   top: 85em !important;
-=======
-.copy {
-  font-size: 14px;
-}
-
-.sponsor-section {
-  position: relative;
-  top: 1050px;
->>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
   z-index: 1;
 }
 
@@ -919,11 +824,7 @@ nav ul {
 footer {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   top: 80em !important;
-=======
-  top: 1000px;
->>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
   height: 20%;
   /* margin: 60px auto; */
   text-align: center;
@@ -1067,7 +968,6 @@ header img {
 
 }
 
-<<<<<<< HEAD
 @media (min-width: 769px) and (max-width: 860px) {
   
   header img {
@@ -1082,131 +982,24 @@ header img {
     margin: 0;
     padding: 0;
     font-size: 42px;
-=======
-@media (max-device-width: 769px) and (max-device-height: 812px) {
-  
-  header img {
-    margin: 0 auto;
-    /* height: 60%; */
-    width: min-content;
->>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
   }
 
-  .sponsorH1{
-    font-size: 24px;
-  }
-
-  #sect1{
-    height: 28%;
-  }
-
-  .content h1 {
+  .content h3 {
     margin: 0;
     padding: 0;
     font-size: 28px;
   }
 
-<<<<<<< HEAD
   .container {
     /* top: 40px; */
     z-index: -1;
     padding: 10px;
     width: 90%;
     margin: 0px auto;
-=======
-  .content h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-  }
-
-  .container {
-    top: 70px;
-    z-index: -1;
-    
-    padding: 10px;
-    width: 90%;
-    /* top: 90px; */
-    margin: 0px auto;
-    /* border: 1px solid red; */
-    /* background-color: red; */
->>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-=======
-}
-
-  .container h1 {
-    font-size: 28px;
-}
-
-.btnTodosCursos {
-  top: 70px;
-}
-
-.btnTodosCursos a {
-  font-size: 14px;
-}
-
-.gallery {
-  margin-top: 90px;
-  top: 70px;
-}
-
-.gallery h1 {
-  font-size: 28px;
-}
-
-.sponsor-section {
-  position: relative;
-  top: 1700px;
-  z-index: -1;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  top: 1800px;
-  height: 20%;
-  margin: 60px auto;
-  text-align: center;
-  width: 100%
-}
-
-.social-media-content, .footer-info{
-  display: none;
-}
-
-.footer-content {
-  border-right:none;
-  height: 20%;
-  width: auto;
-}
-
-.footer-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-logo img{
-  width: 50%;
-  height: 60px;
-}
-
-.footer-content .social-media {
-  text-align: left;
-  width: 100%;
-}
-
-.social-media{
-  width: 30%;
-}
-
->>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
 }
 
   .container h1 {
@@ -1218,7 +1011,6 @@ footer {
   font-size: 28px;
 }
 
-<<<<<<< HEAD
 .sponsor-section {
   position: relative;
   top: 970px;
@@ -1561,9 +1353,3 @@ footer {
     top: 60em;
   }
 }
-=======
-
-
-
- 
->>>>>>> 7fef834b002e16ee5165d582294d6474b4168144
