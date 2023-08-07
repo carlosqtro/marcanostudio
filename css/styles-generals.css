@@ -723,7 +723,7 @@ nav ul {
 
 #sect1 {
   position: relative;
-  top: 6em;
+  /* top: 6em; */
 }
 
 .video-container {
@@ -818,9 +818,9 @@ nav ul {
   z-index: 1;
 }
 
-.sponsorH1 {
+/* .sponsorH1 {
   font-size: 26px;
-}
+} */
 
 footer {
   display: flex;
