@@ -1137,7 +1137,6 @@ footer {
 
     footer{
       top: 60em !important;
-      TODO: Terminar de arreglar este footer
     }
     
 } 
@@ -1206,17 +1205,17 @@ footer {
         /* margin-top: 80px; */
     }
     
-    .btnTodosCursos {
-      /* top: 70px; */
-    }
+    /* .btnTodosCursos {
+      top: 70px; 
+    } */
     
     .card-description{
       height: 280px;
     }
     
-    .gallery {
-      /* margin-top: 110px; */
-    }
+    /* .gallery {
+      margin-top: 110px;
+    } */
     
     .gallery h1 {
       font-size: 28px;
@@ -1230,7 +1229,6 @@ footer {
   
     footer{
       top: 60em !important;
-      TODO: Terminar de arreglar este footer
     }
 
 } 
@@ -1303,10 +1301,10 @@ footer {
         /* margin-top: 60px; */
     }
     
-    .btnTodosCursos {
-      /* top: 0px; */
+    /* .btnTodosCursos {
+      top: 0px;
     }
-      
+       */
     .card-description{
       height: 280px;
     }
@@ -1329,7 +1327,6 @@ footer {
   
     footer{
       top: 60em !important;
-      TODO: Terminar de arreglar este footer
     }
 
 }
