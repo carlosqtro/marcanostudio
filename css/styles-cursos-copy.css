@@ -14,7 +14,6 @@
     margin: 0;
 }
 
-
 .courses-section {
     background: url(https://www.ort.edu.uy/innovafront/theme/common/img/bg-destacado-bottom.svg);
     background-repeat: cover;
@@ -35,7 +34,7 @@
   article{
     display: flex;
     flex-direction: column;
-    background-color: #faeded;
+    background-color: #C9E4C5;;
     /* border: 1px red solid; */
     border-radius: 25px;
     
@@ -62,10 +61,10 @@
     align-items: center;
     /* flex-direction: row; */
     justify-content: center;
-    width: 32%;
+    /* width: 30%; */
     height: 90%;
     border-radius: 5px;
-    border: #fbe0e0 15px solid;
+    border: #C9E4C5 8px solid;
     text-align: center;
   }
 
@@ -96,7 +95,7 @@
     }
 
     .subT{
-        border-bottom: 5px salmon solid;
+        border-bottom: 5px #c1ac95 solid;
         width: 100%;
         padding-bottom: 5px;
         font-size: 24px;
@@ -126,11 +125,11 @@
     /* margin-bottom: 10px; */
   }
 
-  @media only screen and (max-width: 600px) {
+  /* @media only screen and (max-width: 600px) {
     .course-card {
       width: 100%;
     }
-  }
+  } */
 
   /* Estilos Generales */
 /* ******************************************************* */
@@ -429,3 +428,289 @@ justify-content: start;
 /* Estilos "Continuar aqui*/
 /* ******************************************************* */
 
+@media (min-width: 320px) and (max-width: 480px) {
+
+  header img {
+    margin: 0 auto;
+    margin-left: 10px;
+    /* height: 60%; */
+    width: 100px;
+    }
+  
+  .imgHeader{
+    width: 100%;
+  }
+  
+  nav ul {
+   gap: 0;
+  }
+  
+  .tPrincipal{
+    font-size: 40px;
+    text-align: center;
+    padding: 2px;
+  }
+
+  .tSecundario{
+    font-size: 28px;
+  }
+  
+  .imgD {
+    display: none;
+  }
+
+  article{
+    width: 90%;
+    /* padding: 2px; */
+    text-align: justify;
+  }
+
+  .course-card img{
+    width: 90%;
+    padding-top: 20px;
+  }
+
+  .course-content{
+    margin-left: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 90%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    /* top: 80em !important; */
+    height: 20%;
+    /* margin: 60px auto; */
+    text-align: center;
+    width: 100%
+  }
+  
+  .social-media-content, .footer-info{
+    display: none;
+  }
+  
+  .footer-content {
+    border-right:none;
+    height: 20%;
+    width: auto;
+  }
+  
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-logo img{
+    width: 50%;
+    height: 60px;
+  }
+  
+  .footer-content .social-media {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .social-media{
+    width: 30%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  header img {
+    width: auto;
+  }
+  
+    .imgHeader{
+      width: 100%;
+    }
+
+  .tPrincipal{
+    font-size: 40px;
+    text-align: center;
+    padding: 2px;
+  }
+
+  .tSecundario{
+    font-size: 28px;
+  }
+  
+  .imgD {
+    display: none;
+  }
+
+  article{
+    width: 90%;
+    padding: 2px;
+    text-align: justify;
+  }
+
+  .course-card img{
+    width: 400px;
+    height: 300px;
+    padding-top: 20px;
+  }
+
+  .courses-section{
+    padding: 0;
+  }
+
+  .course-content{
+    margin-left: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 90%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    /* top: 1000px; */
+    height: 30%;
+    /* margin: 60px auto; */
+    text-align: center;
+    width: 100%
+  }
+  
+  .social-media-content, .footer-info{
+    display: none;
+  }
+  
+  .footer-content {
+    border-right:none;
+    height: 60%;
+    width: auto;
+  }
+  
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .footer-logo img{
+    height: 100%;
+    width: 80%;
+  }
+  
+  .footer-content .social-media {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .social-media{
+    width: 30%;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 860px) {
+
+  header img {
+    width: 100%;
+  }
+
+  .course-card {
+    padding-top: 20px;
+    width: 30%;
+  }
+
+  article{
+    width: 90%;
+    padding: 2px;
+    text-align: justify;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    /* top: 60em !important; */
+    height: 30%;
+    /* margin: 60px auto; */
+    text-align: center;
+    width: 100%
+  }
+  
+  .social-media-content, .footer-info{
+    display: none;
+  }
+  
+  .footer-content {
+    border-right:none;
+    height: 60%;
+    width: auto;
+  }
+  
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .footer-logo img{
+    height: 100%;
+    width: 80%;
+  }
+  
+  .footer-content .social-media {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .social-media{
+    width: 30%;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 861px) and (max-width: 1012px) {
+  header img {
+    width: 100%;
+  }
+
+  header img {
+    width: 100%;
+  }
+  
+  article{
+    width: 90%;
+  }
+
+  .course-card{
+    width: 30%;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 1013px) and (max-width: 1285px) {
+  header img {
+    width: 100%;
+  }
+  
+  article{
+    width: 90%;
+  }
+
+  .course-card{
+    width: 30%;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 1286px) and (max-width: 1668px) {
+  .course-card{
+    width: 30%;
+    padding-top: 20px;
+   }
+}
+
+@media (min-width: 1669px) {
+  .course-card{
+   padding-top: 20px;
+  }
+}

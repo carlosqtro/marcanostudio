@@ -32,7 +32,7 @@
 }
 
 article {
-  background-color: #faeded;
+  background-color: #C9E4C5;
   /* border: 1px red solid; */
   border-radius: 25px;
   /* display: flex; */
@@ -86,7 +86,7 @@ article {
 }
 
 .subT {
-  border-bottom: 5px salmon solid;
+  border-bottom: 5px #c1ac95 solid;
   width: 100%;
   padding-bottom: 5px;
   border-radius: 2px;
@@ -97,8 +97,8 @@ article {
   font-size: 16px;
   text-decoration: none;
   text-align: justify;
-  background-color: rgb(248, 214, 210);
-  border: 1px solid #ece6e6;
+  background-color: #b5cda3;
+  border: 1px solid #c1ac95;
   padding: 5px;
   border-radius: 5px;
   color: #000;
@@ -106,7 +106,7 @@ article {
 
 .course-content a:hover {
   border: 1px solid #ece6e6;
-  background-color: rgb(249, 179, 171);
+  background-color: #faeBe0; 
 }
 
 .course-card img {
