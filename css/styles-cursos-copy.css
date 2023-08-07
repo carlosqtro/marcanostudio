@@ -465,6 +465,10 @@ justify-content: start;
     text-align: justify;
   }
 
+  .courses-section{
+    padding: 0;
+  }
+  
   .course-card img{
     width: 90%;
     padding-top: 20px;
