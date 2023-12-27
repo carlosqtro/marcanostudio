@@ -38,12 +38,17 @@ header {
   z-index: 999;
 }
 
+ul {
+  margin: 0 !important
+}
+
 .imgHeader {
   display: flex;
   flex-direction: row;
   /* width: 15%; */
   height: 100%;
   background-color: #000;
+
 }
 
 header img {
@@ -120,7 +125,7 @@ nav li a:hover {
   overflow: hidden;
   width: 100%;
   /* height: 100%; */
-  top: 80px;
+  /* top: 80px; */
   z-index: -1;
 }
 
@@ -198,7 +203,7 @@ nav li a:hover {
   position: relative;
   /* padding: 10px; */
   width: 90%;
-  top: 100px;
+  top: 20px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -220,7 +225,7 @@ nav li a:hover {
 .btnTodosCursos {
   position: relative;
   width: 100%;
-  top: 130px;
+  top: 50px;
   text-align: center;
   z-index: 1;
 }
@@ -518,7 +523,7 @@ p {
 
 .gallery {
   position: relative;
-  margin-top: 180px;
+  margin-top: 90px;
   width: 100%;
 }
 
@@ -725,7 +730,7 @@ footer {
 
   #sect1 {
     position: relative;
-    /* top: 6em; */
+    top: 6em;
   }
 
   .video-container {
@@ -773,7 +778,7 @@ footer {
   }
 
   .container {
-    top: 10em;
+    top: 110px;
   }
 
   .container h1 {
@@ -782,7 +787,7 @@ footer {
   }
 
   .btnTodosCursos {
-    top: 12em;
+    top: 130px;
   }
 
   .btnTodosCursos a {
@@ -795,8 +800,8 @@ footer {
   }
 
   .gallery {
-    margin-top: 0px;
-    top: 14em;
+    margin-top: 160px;
+    /* top: 14em; */
   }
 
   .gallery h1 {
@@ -817,7 +822,7 @@ footer {
 
   .sponsor-section {
     position: relative;
-    top: 130%;
+    top: 105%;
     z-index: 1;
   }
 
@@ -828,7 +833,7 @@ footer {
   footer {
     display: flex;
     flex-direction: column;
-    top: 125% !important;
+    /* top: 125% !important; */
     height: 20%;
     /* margin: 60px auto; */
     text-align: center;
@@ -900,8 +905,8 @@ footer {
   }
 
   .gallery {
-    margin-top: 0px;
-    top: 140px;
+    margin-top: 90px;
+    /* top: 140px; */
   }
 
   .gallery h1 {
@@ -1068,8 +1073,8 @@ footer {
   }
 
   .gallery {
-    margin-top: 0px;
-    top: 14em;
+    margin-top: 90px;
+    /* top: 14em; */
   }
 
   .gallery h1 {
@@ -1486,7 +1491,7 @@ footer {
 
   .gallery {
     position: relative;
-    margin-top: 180px;
+    margin-top: 90px;
     width: 100%;
   }
 
@@ -1509,7 +1514,7 @@ footer {
 @media (min-width: 1669px) {
 
   .container h1 {
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
 
   .container h1 {
