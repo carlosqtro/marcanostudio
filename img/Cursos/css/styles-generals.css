@@ -1,0 +1,1533 @@
+Estilos Generales
+/* ******************************************************* */
+
+html,
+body {
+  font-family: 'Playfair Display', serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background: #eee;
+  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos Header */
+/* ******************************************************* */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  height: 12%;
+  width: 100%;
+  /* border: 1px solid red; */
+  text-align: center;
+  background-color: white;
+  /* margin-bottom: 5px; */
+  /* position: fixed; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+ul {
+  margin: 0 !important
+}
+
+.imgHeader {
+  display: flex;
+  flex-direction: row;
+  /* width: 15%; */
+  height: 100%;
+  background-color: #000;
+
+}
+
+header img {
+  margin: 0 auto;
+  /* height: 60%; */
+  width: 100%;
+}
+
+/* Estilos Nav */
+/* ******************************************************* */
+
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  /* margin-top: 1px; */
+  background-color: #000;
+  color: #fff;
+  /* border-top: 1px solid #fff; */
+  /* border: 5px solid rgb(148, 129, 147); */
+  /* border-radius: 5px; */
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  padding: 10px;
+  /* padding: 10px 0px; */
+  /* padding-left: 30px;
+  padding-right: 30px; */
+}
+
+li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  border: 16px solid #000;
+}
+
+nav li a:hover {
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  border: 16px solid #fff;
+  transition: filter 1s;
+}
+
+/* .borderNav {
+  background-color: #383538;
+  height: 5%;
+  position: relative;
+} */
+
+/* Estilos Video */
+/* ******************************************************* */
+
+#sect1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* background-color: #3333337d; */
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* height: 100%; */
+  /* top: 80px; */
+  z-index: -1;
+}
+
+#sect1 {
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  /* Proporción de aspecto 16:9 (para un video widescreen) */
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* video {
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+} */
+
+.content {
+  /* z-index: -1; */
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  color: #fff;
+}
+
+.content h1 {
+  /* margin: 0; */
+  padding: 0;
+  font-size: 70px;
+}
+
+.content h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+}
+
+.content p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+/* Estilos Swiper (Cursos) */
+/* ******************************************************* */
+
+.overlay-container {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  /* padding: 10px; */
+  width: 90%;
+  top: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* z-index: -1;
+  position: relative;
+  padding: 10px;
+  max-width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+
+
+.btnTodosCursos {
+  position: relative;
+  width: 100%;
+  top: 50px;
+  text-align: center;
+  z-index: 1;
+}
+
+.btnTodosCursos a {
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 333ms ease-in-out;
+  background-color: #C9E4C5;
+  border: 2px solid #c1ac95;
+
+  padding: 5px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.btnTodosCursos a:hover {
+  border: 1px solid #ece6e6;
+  background-color: #faeBe0;
+}
+
+.swiper {
+  height: 100%;
+  padding: 4px;
+}
+
+/* .swipper {
+  position: absolute;
+} */
+
+.container h1 {
+  text-align: center;
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+}
+
+.container .swiper-slide {
+  /* height: max-content; */
+  /* top: 50px; */
+  /* position: relative; */
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 15px;
+  text-align: start;
+  box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+}
+
+/* .swiper-wrapper {
+  width: 100%;
+  flex-wrap: nowrap;
+} */
+
+.swiper-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+.container .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-description {
+  background-color: #C9E4C5;
+  font-size: medium;
+  height: 230px;
+}
+
+.container .swiper-slide .card-description {
+  padding: 1rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.container .swiper-slide .card-title,
+.container .swiper-slide {
+  margin-bottom: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.card-title h4 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.card-title#card-title-esp h4 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  height: 100px;
+}
+
+.container .swiper-slide .card-link {
+  text-align: center;
+}
+
+/* Botones */
+.container .swiper-slide .card-link a {
+  text-decoration: none;
+  color: salmon;
+  margin-top: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #b5cda3;
+  border: 1px solid #c1ac95;
+  padding: 5px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.card-link {
+  margin-top: 17px !important;
+}
+
+.container .swiper-slide .card-link a:hover {
+  border: 1px solid #ece6e6;
+  background-color: #faeBe0;
+}
+
+.swiper-button-next {
+  color: #c1ac95;
+  right: 26px !important;
+}
+
+.swiper-button-prev {
+  color: #c1ac95;
+  left: 26px !important;
+}
+
+/* Cursos individuales */
+
+.curso-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 150px;
+  /* width: 50%; */
+  height: 50%;
+  /* margin: 100px auto; */
+  margin-bottom: 0;
+  border: 1px solid #383538;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.curso-tab article {
+  /* margin-top: 15px auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+
+.curso-tab article h1,
+p {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+.curso-tab article img {
+  height: 200px;
+  width: 100%;
+  border: 1px solid #383538;
+  border-radius: 15px;
+  padding: 2px;
+  background-color: #000;
+}
+
+.card-title {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+/* .footer-curso {
+  position: relative;
+  bottom: 300;
+} */
+
+/* Estilos Galeria */
+/* ******************************************************* */
+.container-grid {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "img1 img2 img3 img3 img3"
+    "img1 img2 img3 img3 img3"
+    "img4 img4 img3 img3 img3"
+    "img4 img4 img3 img3 img3"
+    "img6 img6 img5 img5 img5"
+    "img6 img6 img5 img5 img5";
+  gap: 5px;
+  z-index: -1;
+  position: absolute;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img:hover {
+  filter: grayscale(50%);
+  cursor: pointer;
+  transition: filter 0.7s;
+}
+
+.img-1 {
+  grid-area: img1;
+}
+
+.img-2 {
+  grid-area: img2;
+}
+
+.img-3 {
+  grid-area: img3;
+}
+
+.img-4 {
+  grid-area: img4;
+}
+
+.img-5 {
+  grid-area: img5;
+}
+
+.img-6 {
+  grid-area: img6;
+}
+
+.container-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0;
+  transform: translateX(-120%);
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s ease-in;
+}
+
+.move {
+  transform: translateX(0);
+}
+
+.img-show {
+  height: 80%;
+  display: block;
+  object-fit: cover;
+  transform: scale(0);
+  transition: transform 0.2s 0.4s;
+}
+
+.show {
+  transform: scale(1);
+}
+
+.copy {
+  /* position: fixed; */
+  margin-left: 10px;
+  color: #fff;
+  bottom: 30px;
+  font-size: 24px;
+}
+
+.gallery {
+  position: relative;
+  margin-top: 90px;
+  width: 100%;
+}
+
+.gallery h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.bx.bx-x {
+  position: fixed;
+  color: #fff;
+  top: 20px;
+  right: 10px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* @media screen and (max-width: 700px) {
+  .img-show {
+    width: 90%;
+  }
+
+  .copy {
+    bottom: 20px;
+  }
+
+  .bx.bx-x {
+    top: 10px;
+    font-size: 30px;
+  }
+} */
+
+/* Estilos sponsor*/
+/* ******************************************************* */
+
+.sponsor-section {
+  position: relative;
+  top: 770px;
+  margin-bottom: 200px;
+}
+
+.sponsor-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sponsor {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  width: 150px;
+  text-align: center;
+  /* background-color: #C9E4C5; */
+  background-color: #c3b8aa;
+}
+
+.sponsorH1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.sponsor img {
+  width: 130px;
+  height: 130px;
+  border-radius: 5px;
+}
+
+/* Estilos Icono WhatsApp/
+/* ******************************************************* */
+.btn-wsp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  line-height: 55px;
+  bottom: 60px;
+  right: 10px;
+  background: #0df053;
+  color: #fff;
+  /* border: 1px solid #36b132; */
+  border-radius: 50px;
+  text-align: center;
+  font-size: 50px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+/* Estilos Footer/
+/* ******************************************************* */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 880px;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  margin-top: 60px;
+  height: 20%;
+  width: 100%;
+  gap: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  width: 40%;
+  /* height: 60%; */
+}
+
+.footer-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  color: #888383;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  border-right: 1px solid gray;
+}
+
+.footer-info {
+  display: flex;
+  text-align: start;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+  color: #787575;
+}
+
+.social-media-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  margin-top: 5px;
+  color: #787575;
+  text-align: start;
+}
+
+.social-media-content p {
+  padding-bottom: 5px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  margin-top: 5px;
+  color: #080808;
+}
+
+.footer-info img {
+  width: 35%;
+  height: 100%;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.social-media img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Estilos de Response*/
+/* ******************************************************* */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Estilos y ajustes para dispositivos móviles pequeños */
+
+  header img {
+    margin: 0 auto;
+    margin-left: 10px;
+    /* height: 60%; */
+    width: 100px;
+  }
+
+  .imgHeader {
+    width: 100%;
+  }
+
+  nav ul {
+    gap: 0;
+  }
+
+  .sponsorH1 {
+    font-size: 24px;
+  }
+
+  #sect1 {
+    position: relative;
+    top: 6em;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* Proporción de aspecto 16:9 (para un video widescreen) */
+    overflow: hidden;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+  }
+
+  /* Estilos adicionales para el contenido */
+  .content h1 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    /* margin-top: 70px; */
+  }
+
+  .content h3 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    /* margin-bottom: 1.5rem;
+  padding: 6px; */
+  }
+
+  .container {
+    top: 110px;
+  }
+
+  .container h1 {
+    font-size: 26px;
+    /* margin-top: 80px */
+  }
+
+  .btnTodosCursos {
+    top: 130px;
+  }
+
+  .btnTodosCursos a {
+    font-size: 20px;
+    background-color: #C9E4C5;
+    border: 1px solid #ece6e6;
+    padding: 5px;
+    border-radius: 5px;
+    color: #000;
+  }
+
+  .gallery {
+    margin-top: 160px;
+    /* top: 14em; */
+  }
+
+  .gallery h1 {
+    font-size: 26px;
+  }
+
+  .container-img {
+    height: 50%;
+    width: 100%;
+    top: 20%;
+
+  }
+
+  .copy {
+    font-size: 14px;
+    position: fixed;
+  }
+
+  .sponsor-section {
+    position: relative;
+    top: 105%;
+    z-index: 1;
+  }
+
+  /* .sponsorH1 {
+  font-size: 26px;
+} */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    /* top: 125% !important; */
+    height: 20%;
+    /* margin: 60px auto; */
+    text-align: center;
+    width: 100%
+  }
+
+  .social-media-content,
+  .footer-info {
+    display: none;
+  }
+
+  .footer-content {
+    border-right: none;
+    height: 20%;
+    width: auto;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    width: 50%;
+    height: 60px;
+  }
+
+  .footer-content .social-media {
+    text-align: left;
+    width: 100%;
+  }
+
+  .social-media {
+    width: 30%;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  header img {
+    width: auto;
+  }
+
+  .imgHeader {
+    width: 100%;
+  }
+
+  nav ul {
+    gap: 0;
+  }
+
+  .container h1 {
+    font-size: 28px;
+    /* margin-top: 80px; */
+  }
+
+  .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+  }
+
+  .content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .gallery {
+    margin-top: 90px;
+    /* top: 140px; */
+  }
+
+  .gallery h1 {
+    font-size: 28px;
+  }
+
+  .container-img {
+    height: 50%;
+    width: 100%;
+    top: 20%;
+
+  }
+
+  .copy {
+    font-size: 14px;
+  }
+
+  .sponsor-section {
+    position: relative;
+    top: 80em !important;
+    z-index: 1;
+  }
+
+  .sponsorH1 {
+    font-size: 28px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    top: 1000px;
+    height: 30%;
+    /* margin: 60px auto; */
+    text-align: center;
+    width: 100%
+  }
+
+  .social-media-content,
+  .footer-info {
+    display: none;
+  }
+
+  .footer-content {
+    border-right: none;
+    height: 60%;
+    width: auto;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .footer-logo img {
+    height: 100%;
+    width: 80%;
+  }
+
+  .footer-content .social-media {
+    text-align: left;
+    width: 100%;
+  }
+
+  .social-media {
+    width: 30%;
+    margin-top: 0;
+  }
+
+}
+
+/* Estilos para iPhone X, iPhone 11 y dispositivos similares en orientación apaisada */
+@media (max-width: 926px) and (max-height: 428px) {
+
+  header img {
+    margin: 0 auto;
+    margin-left: 10px;
+    /* height: 60%; */
+    width: 100px;
+  }
+
+  .imgHeader {
+    width: 100%;
+  }
+
+  nav ul {
+    gap: 0;
+  }
+
+  .sponsorH1 {
+    font-size: 24px;
+  }
+
+  #sect1 {
+    position: relative;
+    /* top: 6em; */
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* Proporción de aspecto 16:9 (para un video widescreen) */
+    overflow: hidden;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+  }
+
+  /* Estilos adicionales para el contenido */
+  .content h1 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    /* margin-top: 70px; */
+  }
+
+  .content h3 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    /* margin-bottom: 1.5rem;
+  padding: 6px; */
+  }
+
+  .container {
+    top: 10em;
+  }
+
+  .container h1 {
+    font-size: 26px;
+    /* margin-top: 80px */
+  }
+
+  .btnTodosCursos {
+    top: 12em;
+  }
+
+  .btnTodosCursos a {
+    font-size: 20px;
+    background-color: #C9E4C5;
+    border: 1px solid #ece6e6;
+    padding: 5px;
+    border-radius: 5px;
+    color: #000;
+  }
+
+  .gallery {
+    margin-top: 90px;
+    /* top: 14em; */
+  }
+
+  .gallery h1 {
+    font-size: 26px;
+  }
+
+  .container-img {
+    height: 50%;
+    width: 100%;
+    top: 20%;
+
+  }
+
+  .copy {
+    font-size: 14px;
+    position: fixed;
+  }
+
+  .sponsor-section {
+    position: relative;
+    top: 75em !important;
+    z-index: 1;
+  }
+
+  /* .sponsorH1 {
+  font-size: 26px;
+} */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    /* top: 80em !important; */
+    height: 20%;
+    /* margin: 60px auto; */
+    text-align: center;
+    width: 100%
+  }
+
+  .social-media-content,
+  .footer-info {
+    display: none;
+  }
+
+  .footer-content {
+    border-right: none;
+    height: 20%;
+    width: auto;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    width: 50%;
+    height: 60px;
+  }
+
+  .footer-content .social-media {
+    text-align: left;
+    width: 100%;
+  }
+
+  .social-media {
+    width: 30%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 860px) {
+
+  header img {
+    width: 100%;
+  }
+
+  .sponsorH1 {
+    font-size: 24px;
+  }
+
+  .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 42px;
+  }
+
+  .content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+  }
+
+  .container {
+    /* top: 40px; */
+    z-index: -1;
+    padding: 10px;
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container h1 {
+    font-size: 28px;
+    /* margin-top: 80px; */
+  }
+
+  .gallery h1 {
+    font-size: 28px;
+  }
+
+  .sponsor-section {
+    position: relative;
+    top: 80em;
+    z-index: -1;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    top: 60em !important;
+    height: 30%;
+    /* margin: 60px auto; */
+    text-align: center;
+    width: 100%
+  }
+
+  .social-media-content,
+  .footer-info {
+    display: none;
+  }
+
+  .footer-content {
+    border-right: none;
+    height: 60%;
+    width: auto;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .footer-logo img {
+    height: 100%;
+    width: 80%;
+  }
+
+  .footer-content .social-media {
+    text-align: left;
+    width: 100%;
+  }
+
+  .social-media {
+    width: 30%;
+    margin-top: 0;
+  }
+
+}
+
+@media (min-width: 861px) and (max-width: 1012px) {
+
+  header img {
+    width: 100%;
+  }
+
+  .sponsorH1 {
+    font-size: 24px;
+  }
+
+  #sect1 {
+    position: relative;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* Proporción de aspecto 16:9 (para un video widescreen) */
+    overflow: hidden;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .container {
+    /* top: 40px; */
+    z-index: -1;
+    padding: 10px;
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content h1 {
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .gallery h1 {
+    font-size: 28px;
+  }
+
+  .sponsor-section {
+    position: relative;
+    top: 970px;
+    z-index: -1;
+  }
+
+  footer {
+    top: 60em !important;
+  }
+
+}
+
+@media (min-width: 1013px) and (max-width: 1285px) {
+
+  header img {
+    width: 100%;
+  }
+
+  .sponsorH1 {
+    font-size: 24px;
+  }
+
+  #sect1 {
+    position: relative;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* Proporción de aspecto 16:9 (para un video widescreen) */
+    overflow: hidden;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .container {
+    /* top: 40px; */
+    z-index: -1;
+    /* padding: 10px; */
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content h1 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container h1 {
+    font-size: 28px;
+    /* margin-top: 80px; */
+  }
+
+  /* .btnTodosCursos {
+      top: 70px; 
+    } */
+
+  .card-description {
+    height: 280px;
+  }
+
+  /* .gallery {
+      margin-top: 110px;
+    } */
+
+  .gallery h1 {
+    font-size: 28px;
+  }
+
+  .sponsor-section {
+    position: relative;
+    top: 1000px;
+    z-index: -1;
+  }
+
+  footer {
+    top: 60em !important;
+  }
+
+}
+
+@media (min-width: 1286px) and (max-width: 1668px) {
+
+  header img {
+    width: 100%;
+  }
+
+  .sponsorH1 {
+    font-size: 24px;
+  }
+
+  #sect1 {
+    position: relative;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* Proporción de aspecto 16:9 (para un video widescreen) */
+    overflow: hidden;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .container {
+    /* top: 140px; */
+    z-index: -1;
+    padding: 10px;
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content h1 {
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content h3 {
+    font-size: 3em;
+  }
+
+  .container h1 {
+    font-size: 28px;
+    /* margin-top: 60px; */
+  }
+
+  /* .btnTodosCursos {
+      top: 0px;
+    }
+       */
+  .card-description {
+    height: 280px;
+  }
+
+  .gallery {
+    position: relative;
+    margin-top: 90px;
+    width: 100%;
+  }
+
+  .gallery h1 {
+    font-size: 28px;
+  }
+
+  .sponsor-section {
+    position: relative;
+    top: 70em;
+    z-index: -1;
+  }
+
+  footer {
+    top: 60em !important;
+  }
+
+}
+
+@media (min-width: 1669px) {
+
+  .container h1 {
+    /* margin-top: 80px; */
+  }
+
+  .container h1 {
+    margin-top: 0px;
+  }
+
+  .sponsor-section {
+    position: relative;
+    top: 70em;
+    z-index: -1;
+  }
+
+  footer {
+    top: 60em;
+  }
+}
