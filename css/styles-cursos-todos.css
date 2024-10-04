@@ -106,7 +106,7 @@ article {
 
 .course-content a:hover {
   border: 1px solid #ece6e6;
-  background-color: #faeBe0; 
+  background-color: #faeBe0;
 }
 
 .course-card img {
@@ -467,7 +467,7 @@ div.courses-section {
   footer {
     display: flex;
     flex-direction: column;
-    top: 490em !important;
+    top: 590em !important;
     height: 20%;
     /* margin: 60px auto; */
     text-align: center;
@@ -600,35 +600,36 @@ div.courses-section {
     text-align: center;
     width: 100%
   }
-  
-  .social-media-content, .footer-info{
+
+  .social-media-content,
+  .footer-info {
     display: none;
   }
-  
+
   .footer-content {
-    border-right:none;
+    border-right: none;
     height: 60%;
     width: auto;
   }
-  
+
   .footer-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
   }
-  
-  .footer-logo img{
+
+  .footer-logo img {
     height: 100%;
     width: 80%;
   }
-  
+
   .footer-content .social-media {
     text-align: left;
     width: 100%;
   }
-  
-  .social-media{
+
+  .social-media {
     width: 30%;
     margin-top: 0;
   }
@@ -640,7 +641,7 @@ div.courses-section {
     width: 100%;
   }
 
-  footer{
+  footer {
     top: 230em;
   }
 }
@@ -654,7 +655,7 @@ div.courses-section {
     margin-left: 25px;
   }
 
-  footer{
+  footer {
     top: 230em;
   }
 }
@@ -665,7 +666,7 @@ div.courses-section {
     margin-left: 25px;
   }
 
-  footer{
+  footer {
     top: 140em;
   }
 }
@@ -676,13 +677,13 @@ div.courses-section {
     margin-left: 25px;
   } */
 
-  footer{
+  footer {
     top: 100em;
   }
 }
 
 @media (min-width: 1669px) {
-  footer{
+  footer {
     top: 95em;
   }
 }
