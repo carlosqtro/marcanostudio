@@ -1,10 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100hw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  /* Evitar scroll horizontal */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .tPrincipal {
   margin-top: 130px;
   text-align: center;
   font-size: 46px;
   padding: 0;
   margin-bottom: 0;
+  font-family: 'Playfair Display', serif;
+  width: 100%;
+  /* Cambiar de 100vw a 100% */
 }
+
 
 .tSecundario {
   margin-top: 180px;
@@ -432,11 +456,11 @@ div>article {
 
 div.courses-section {
   display: grid;
-  margin-left: 10px;
-  grid-template-columns:
-    repeat(auto-fit, minmax(350px, 1fr));
-  gap: 15px
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 15px;
+  margin-left: 40px;
 }
+
 
 .ref {
   margin-top: 20px;
@@ -467,7 +491,7 @@ div.courses-section {
   footer {
     display: flex;
     flex-direction: column;
-    top: 590em !important;
+    top: 560em !important;
     height: 20%;
     /* margin: 60px auto; */
     text-align: center;
@@ -528,7 +552,7 @@ div.courses-section {
   footer {
     display: flex;
     flex-direction: column;
-    top: 490em;
+    top: 560em;
     height: 30%;
     /* margin: 60px auto; */
     text-align: center;
@@ -578,7 +602,7 @@ div.courses-section {
   footer {
     display: flex;
     flex-direction: column;
-    top: 230em;
+    top: 560em;
     height: 30%;
     /* margin: 60px auto; */
     text-align: center;
@@ -594,7 +618,7 @@ div.courses-section {
   footer {
     display: flex;
     flex-direction: column;
-    top: 230em;
+    top: 260em;
     height: 30%;
     /* margin: 60px auto; */
     text-align: center;
@@ -642,7 +666,7 @@ div.courses-section {
   }
 
   footer {
-    top: 230em;
+    top: 270em;
   }
 }
 
@@ -656,7 +680,7 @@ div.courses-section {
   }
 
   footer {
-    top: 230em;
+    top: 270em;
   }
 }
 
@@ -678,12 +702,12 @@ div.courses-section {
   } */
 
   footer {
-    top: 100em;
+    top: 180em;
   }
 }
 
 @media (min-width: 1669px) {
   footer {
-    top: 95em;
+    top: 100em;
   }
 }
