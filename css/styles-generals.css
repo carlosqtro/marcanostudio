@@ -456,7 +456,7 @@ p {
     "img6 img6 img6 img5 img5";
 
   gap: 5px;
-  z-index: 1000;
+  z-index: 1;
   position: absolute;
 }
 
@@ -500,7 +500,7 @@ p {
   position: absolute;
   /* height: 100%; */
   width: 100%;
-  top: 20%;
+  top: 10%;
   left: 0;
   transform: translateX(-120%);
   background: rgba(0, 0, 0, 0.5);
@@ -733,7 +733,7 @@ footer {
     margin: 0 auto;
     /* margin-left: 10px; */
     /* height: 90%; */
-    width: 80%;
+    width: 70%;
   }
 
   .imgHeader {
@@ -831,7 +831,7 @@ footer {
   .container-img {
     height: 50%;
     width: 100%;
-    top: 20%;
+    top: 10%;
 
   }
 
@@ -1067,7 +1067,7 @@ footer {
   .container-img {
     height: 50%;
     width: 100%;
-    top: 20%;
+    /* top: 20%; */
 
   }
 
@@ -1077,7 +1077,7 @@ footer {
 
   .sponsor-section {
     position: relative;
-    /* top: 80em !important; */
+    top: 47em !important;
     z-index: 1;
   }
 
