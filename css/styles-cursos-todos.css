@@ -87,6 +87,7 @@ article .ref a:hover {
 }
 
 .courses-section {
+  /* margin-top: 130px; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
@@ -221,6 +222,11 @@ section,
 
 #sect1 {
   margin-top: 100px;
+}
+
+.container{
+  margin-top: 140px;
+  text-align: center;
 }
 
 /* =============================== */
